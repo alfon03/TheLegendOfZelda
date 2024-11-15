@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Legend of Zelda - Inicio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./img/logo/triforce-logo-875784B69E-seeklogo.com.png"
+      type="image/x-icon"
+    />
+ 
+  </head>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="../img/logo/triforce-logo-875784B69E-seeklogo.com.png"
+          alt="Zelda Logo"
+          width="50"
+        />UniverseTZ
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-between"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./components/histroy.html">Historia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./components/games.html">Juegos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./components/contact.html">Contacto</a>
+          </li>
+        </ul>
+        <form class="d-flex mx-auto" style="width: 50%">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Buscar"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">
+            Buscar
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+
+    <!-- Carrusel de Imágenes -->
+    <div
+      id="mainCarousel"
+      class="carousel slide "
+      data-bs-ride="carousel"
+      data-bs-interval="3000"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://www.nintendo.com/eu/media/images/10_share_images/portals_3/2x1_Hub_TheLegendOfZelda_ToTK_image1600w.jpg"
+            class="d-block w-100"
+            alt="Zelda Image 1"
+            style="height: 500px; object-fit: cover"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://sm.ign.com/ign_es/feature/t/the-10-bes/the-10-best-legend-of-zelda-games_sp63.jpg"
+            class="d-block w-100"
+            alt="Zelda Image 2"
+            style="height: 500px; object-fit: cover"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://media.es.wired.com/photos/654ea72e0a937b56ca502394/master/pass/Legend-of-Zelda-TotK-Movie-Culture.jpg"
+            class="d-block w-100"
+            alt="Zelda Image 3"
+            style="height: 500px; object-fit: cover"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#mainCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#mainCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+
+    <!-- Sección de Bienvenida -->
+    <div class="container mt-5 text-center">
+      <h1>Bienvenido al mundo de The Legend of Zelda</h1>
+      <p>
+        Explora la historia, personajes y juegos de una de las sagas más
+        legendarias del mundo de los videojuegos.
+      </p>
+      <button class="btn btn-primary">Descubre más</button>
+    </div>
+
+    <!-- Sección de Juegos Populares -->
+    <div class="container mt-5">
+      <h2 class="text-center">Juegos Emblemáticos</h2>
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img
+              src="https://www.thespike.gg/_next/image?url=https%3A%2F%2Fthespike-strapi-cms.s3.us-east-1.amazonaws.com%2Focarina_of_time_switch_4c18c3f773.jpg&w=1920&q=75"
+              class="card-img-top"
+              alt="Game 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">The Legend of Zelda: Ocarina of Time</h5>
+              <p class="card-text">
+                Un clásico de la saga, Ocarina of Time es uno de los videojuegos
+                más aclamados de la historia. Acompaña a Link en su aventura
+                para salvar Hyrule.
+              </p>
+              <a href="#" class="btn btn-primary">Más información</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img
+              src="./img/pinturas-sobre-lienzo-the-legend-of-zelda-breath-of-the-wild-sunset-i111061.jpg"
+              class="card-img-top"
+              alt="Game 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                The Legend of Zelda: Breath of the Wild
+              </h5>
+              <p class="card-text">
+                Una aventura épica en un mundo abierto donde la libertad es el
+                límite. Respira la esencia de la aventura y la exploración.
+              </p>
+              <a href="#" class="btn btn-primary">Más información</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img
+              src="https://www.nintendo.com/eu/media/images/10_share_images/games_15/super_nintendo_5/H2x1_SNES_TheLegendOfZeldaALinkToThePast.jpg"
+              class="card-img-top"
+              alt="Game 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                The Legend of Zelda: A Link to the Past
+              </h5>
+              <p class="card-text">
+                Un juego que marcó la transición a la era de los 16 bits. Un
+                clásico que definió la serie.
+              </p>
+              <a href="#" class="btn btn-primary">Más información</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Sección de Pestañas -->
+    <div class="container mt-5">
+      <h2 class="text-center">Más Contenidos</h2>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="tab1-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#tab1"
+            type="button"
+            role="tab"
+            aria-controls="tab1"
+            aria-selected="true"
+          >
+            Historia
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="tab2-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#tab2"
+            type="button"
+            role="tab"
+            aria-controls="tab2"
+            aria-selected="true"
+          >
+            Personajes
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link "
+            id="tab3-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#tab3"
+            type="button"
+            role="tab"
+            
+          >
+            Juegos
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content mt-3" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="tab1"
+          role="tabpanel"
+          aria-labelledby="tab1-tab"
+        >
+          <p>
+            La historia de The Legend of Zelda gira en torno a las aventuras de
+            Link, un joven héroe que se embarca en una misión para rescatar a la
+            princesa Zelda y derrotar al malvado Ganon, quien busca dominar el
+            reino de Hyrule. A lo largo de la saga, los jugadores exploran
+            mundos llenos de acertijos, enemigos y misterios.
+          </p>
+          <a href="./components/histroy.html" class="btn btn-primary">Historia</a>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="tab2"
+          role="tabpanel"
+          aria-labelledby="tab2-tab"
+        >
+          <p>
+            Los personajes clave incluyen a Link, el valiente héroe; Zelda, la
+            princesa sabia; Ganon, el villano principal; y una variedad de otros
+            personajes que ayudan o desafían a Link en sus aventuras. La
+            relación entre estos personajes y el mundo de Hyrule es fundamental
+            para la narrativa.
+          </p>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="tab3"
+          role="tabpanel"
+          aria-labelledby="tab3-tab"
+        >
+          <p>
+            La saga de Zelda ha presentado numerosos juegos a lo largo de los
+            años, desde los clásicos en 2D como "A Link to the Past" hasta las
+            épicas aventuras en 3D como "Breath of the Wild". Cada juego ofrece
+            nuevas mecánicas y expandes la rica mitología del universo de Zelda.
+          </p>
+          <a href="./components/games.html" class="btn btn-primary">Juegos</a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección de Noticias o Novedades -->
+    <div class="container mt-5">
+      <h2 class="text-center">Últimas Noticias</h2>
+      <div class="row">
+        <!-- Noticia 1 -->
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <img
+              src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2024/08/legend-zelda-echoes-wisdom-1724089614311-3986526.jpg?tf=3840x"
+              class="card-img-top"
+              alt="Noticia 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Nuevo juego de Zelda en desarrollo</h5>
+              <p class="card-text">
+                Un nuevo juego de <b>The Legend of Zelda</b> está en camino. Los
+                detalles aún son limitados, pero se espera que sea uno de los
+                lanzamientos más emocionantes de la serie.
+              </p>
+              <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+          </div>
+        </div>
+        <!-- Noticia 2 -->
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <img
+              src="https://static.posters.cz/image/750/pinturas-sobre-lienzo-the-legend-of-zelda-hyrule-map-i112174.jpg"
+              class="card-img-top"
+              alt="Noticia 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Exposición sobre Zelda en Hyrule</h5>
+              <p class="card-text">
+                Se inaugura una nueva exposición dedicada a *The Legend of
+                Zelda* en el Museo de Hyrule. Ven a descubrir arte y detalles de
+                los juegos a lo largo de los años.
+              </p>
+              <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="text-white py-4 mt-5">
+      <div class="container text-center">
+        <p>&copy; 2024 The Legend of Zelda. Todos los derechos reservados.</p>
+        <div class="d-flex justify-content-center mb-3">
+          <a href="#" class="text-white mx-3" title="Facebook">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+          <a href="#" class="text-white mx-3" title="Twitter">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+          <a href="#" class="text-white mx-3" title="Instagram">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+          <a href="#" class="text-white mx-3" title="YouTube">
+            <i class="fab fa-youtube fa-2x"></i>
+          </a>
+        </div>
+        <p>
+          <a href="#privacy-policy.html" class="text-white"
+            >Política de Privacidad</a
+          >
+          |
+          <a href="#terms-of-service.html" class="text-white"
+            >Términos de Servicio</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

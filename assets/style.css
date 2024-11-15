@@ -1,0 +1,258 @@
+/* Variables de color */
+:root {
+  --timberwolf: #dad7cdff;
+  --sage: #a3b18aff;
+  --fern-green: #588157ff;
+  --hunter-green: #3a5a40ff;
+  --brunswick-green: #344e41ff;
+}
+
+/* Estilos generales */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: var(--timberwolf);
+  color: var(--hunter-green);
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+}
+
+.container {
+  flex-grow: 1;
+}
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--brunswick-green);
+  margin: 30px 0;
+}
+
+h1,
+h2 {
+  font-family: "ZeldaFont", sans-serif;
+}
+
+@font-face {
+  font-family: "ZeldaFont";
+  src: url("../fonts/Triforce.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.search-form {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+}
+
+.navbar {
+  background-color: var(--brunswick-green);
+}
+
+.btn-primary {
+  background-color: var(--fern-green);
+  border-color: var(--brunswick-green);
+}
+
+.btn-primary:hover {
+  background-color: var(--sage);
+  border-color: var(--brunswick-green);
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--timberwolf);
+}
+
+.nav-link:hover {
+  color: var(--sage);
+}
+
+.carousel-item {
+  background-color: var(--fern-green);
+}
+
+.card-img-top,
+.carousel-inner img {
+  height: 400px;
+  object-fit: cover;
+}
+.button-custom {
+  background-color: var(--sage);
+  border: none;
+  color: var(--timberwolf);
+}
+
+.button-custom:hover {
+  background-color: var(--fern-green);
+  color: var(--timberwolf);
+}
+a {
+  color: var(--fern-green);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: var(--brunswick-green);
+}
+
+footer {
+  background-color: var(--brunswick-green);
+  color: var(--timberwolf);
+  padding: 1rem;
+  text-align: center;
+  margin-top: auto;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+table {
+  border: 1px solid var(--hunter-green);
+  margin-top: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--timberwolf);
+}
+
+th,
+td {
+  text-align: center;
+  padding: 12px;
+}
+
+th {
+  background-color: var(--hunter-green);
+  color: var(--timberwolf);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+td {
+  background-color: var(--timberwolf);
+  color: var(--hunter-green);
+}
+
+td:hover {
+  background-color: var(--sage);
+  cursor: pointer;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: var(--sage);
+}
+
+.card {
+  background-color: var(--timberwolf);
+  border: 1px solid var(--brunswick-green);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.card-title {
+  color: var(--hunter-green);
+  font-size: 1.5rem;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.game-cover {
+  max-width: 120px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.game-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.timeline-item {
+  position: relative;
+  margin-left: 50px;
+  margin-bottom: 40px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -24px;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--hunter-green);
+}
+
+.timeline-item .timeline-content {
+  background-color: var(--timberwolf);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item .timeline-content h5 {
+  margin-bottom: 10px;
+}
+
+.timeline-item .timeline-content p {
+  margin-bottom: 0;
+}
+
+.timeline-image {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.img-fluid {
+  max-width: 100%;
+}
+
+.accordion-button {
+  color: var(--hunter-green);
+  font-weight: bold;
+}
+
+.accordion-item {
+  margin-bottom: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--sage);
+  color: var(--timberwolf);
+}
+.game-cover {
+  max-width: 100px;
+  height: auto;
+}
+
+.game-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.table-responsive {
+  margin-top: 20px;
+}
+
+@media (max-width: 576px) {
+  .game-cover {
+    max-width: 60px;
+  }
+
+  .table td,
+  .table th {
+    font-size: 0.9rem;
+  }
+}
